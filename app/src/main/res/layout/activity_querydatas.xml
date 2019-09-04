@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0eff5"
+    tools:context="com.newland.sunpower.activity.QueryDatasActivity">
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/MyTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

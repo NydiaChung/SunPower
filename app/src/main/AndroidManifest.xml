@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionName="1"
+    package="com.newland.sunpower">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.newland.sunpower.SunPower"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_solar_energy_256"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_solar_energy_256"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.newland.sunpower.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.newland.sunpower.activity.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.newland.sunpower.activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.newland.sunpower.activity.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.newland.sunpower.activity.AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.QueryDatasActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+    </application>
+
+
+</manifest>
